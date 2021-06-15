@@ -1,5 +1,5 @@
 module.exports = {
   lintOnSave: true,
   publicPath:
-    process.env.NODE_ENV === 'production' ? '/vue-cli-github-actions/' : '/',
+    process.env.NODE_ENV === 'production' ? '/actions-example-vue/' : '/',
 };
