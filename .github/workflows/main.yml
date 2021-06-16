@@ -31,9 +31,10 @@ jobs:
           touch .env
           echo VUE_APP_TITLE=${{ secrets.VUE_APP_TITLE }} >> .env
           cat .env
-      - name: Install & Build
+      - name: Install & Lint & Build
         run: |
           npm install
+          npm run lint
           npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
