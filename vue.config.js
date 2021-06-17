@@ -3,7 +3,7 @@ module.exports = {
     process.env.NODE_ENV === 'production' ? '/actions-example-vue/' : '/',
   chainWebpack: (config) => {
     config.plugin('html').tap((args) => {
-      args[0].title = process.env['VUE_APP_TITLE'] || 'CI /CD 測試 demo';
+      args[0].title = 'CI /CD 測試範例';
       return args;
     });
   },
